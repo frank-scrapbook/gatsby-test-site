@@ -1,8 +1,8 @@
 {
-  "name": "frank-s-gatsby-site-v3",
+  "name": "franks-gatsby-tutorial-test-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Frank's Gatsby Site v3",
+  "description": "Frank's Gatsby Tutorial - Test Suite",
   "author": "Frank Peng",
   "keywords": [
     "gatsby"
