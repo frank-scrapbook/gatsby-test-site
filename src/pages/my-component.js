@@ -17,7 +17,7 @@ import { title } from '../components/my-component.module.css'
 // lets you write CSS scoped to your components
 // removes the worry about selector name collisions between components.
 
-const MyComponent = () => {
+const MyComponentPage = () => {
     return (
         <h1 className={title}>
             Super Sweet Title Page
@@ -27,4 +27,4 @@ const MyComponent = () => {
 
 /* Step 3: Export your component so it
 can be used by other parts of your app. */
-export default MyComponent
+export default MyComponentPage

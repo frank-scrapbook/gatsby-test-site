@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const ValidComponent = () => {
+const ValidComponentPage = () => {
     const validFunction = () => {
         return <p>Hi, I'm a valid function within a component</p>
     }
@@ -23,4 +23,4 @@ const ValidComponent = () => {
 //     )
 // }
 
-export default ValidComponent
+export default ValidComponentPage
