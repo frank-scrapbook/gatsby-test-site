@@ -5,6 +5,12 @@
 
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { 
+    container,
+    heading,
+    navLinks,
+    navLinkItem,
+    navLinkText } from './layout.module.css'
 
 // Instead of const Layout = (props) => {...}
 // It is const Layout = ({ pageTitle, children }) => {...}
@@ -18,18 +24,26 @@ import { Link } from 'gatsby'
 //  const children = props.children
 //}
 
+// className is also another built-in prop that React automatically knows how to handle.
+
+// By CSS naming convention, use kebab case (like .nav-links).
+// But in JS naming convention, use camel case (like navLinks).
+// When using CSS Modules with Gatsby, you can have both!
+// Your kebab-case class names in your .module.css files will
+//// auto-convert to camel-case variables that you can import in your .js files.
+
 const Layout = ({ pageTitle, children }) => {
     return (
-        <div>
+        <div className={container}>
             <title>{pageTitle}</title>
             <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                <ul className={navLinks}>
+                    <li className={navLinkItem}><Link to="/">Home</Link></li>
+                    <li className={navLinkItem}><Link to="/about">About</Link></li>
                 </ul>
             </nav>
             <main>
-                <h1>{pageTitle}</h1>
+                <h1 className={heading}>{pageTitle}</h1>
                 {children}
             </main>
         </div>

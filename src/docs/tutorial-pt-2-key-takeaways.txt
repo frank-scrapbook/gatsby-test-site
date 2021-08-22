@@ -1,0 +1,23 @@
+- React = a library to break down UI into smaller pieces, called components.
+- Component = a function that returns a React element.
+- React elements can be written in JSX.
+
+Page Components:
+- Contain all UI elements for a specific page of your site.
+- Gatsby auto creates pages for components that are the default exports of files in the src/pages directory.
+- Name of file is used as route for the page.
+
+Building-block components:
+- Smaller reusable parts of your UI.
+- Can be imported into page components or other building block components.
+
+- You can import "pre-built" components (like <Link>) from other packages.
+- OR
+- you can write your own custom components from scratch (like <Layout>).
+
+- You can use props to change how a component renders.
+- You can define your own props when you build a component.
+- React has built-in props like 'children' and 'className'.
+
+- Gatsby isn't opinionated about what styling approach you want to use.
+- But by default, Gatsby works with CSS Modules.
