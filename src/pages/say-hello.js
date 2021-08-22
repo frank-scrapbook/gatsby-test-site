@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Greeting from './greeting'
+import Greeting from '../components/greeting'
 
 // Rendering the <Greeting> component
 const SayHello = () => {
@@ -11,3 +11,5 @@ const SayHello = () => {
         </div>
     )
 }
+
+export default SayHello

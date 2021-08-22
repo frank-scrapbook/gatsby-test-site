@@ -7,3 +7,5 @@ const Greeting = (props) => {
         <p>{props.name}!</p>
     )
 }
+
+export default Greeting
